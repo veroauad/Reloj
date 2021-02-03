@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Orbitron&display=swap');
+body {
+    background: black;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.fecha {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    /* el em es la unidad de medida  para las letras, 1em es lo mínimo y está dado directamente por visual studio code, nosotros lo podemos ir multiplicando dependiendo del tamaño que quieramos */
+    letter-spacing: 0.2em;
+}
+
+.hora {
+    color: white;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 8em;
+    letter-spacing: 0.3em;
+}
+
+
+/* efecto neon */
+
+.yellow {
+    text-shadow: 0 0 5px rgb(255, 255, 0), 0 0 10px rgb(255, 255, 0), 0 0 25px rgb(255, 255, 0), 0 0 40px rgb(255, 255, 0), 0 0 65px rgb(255, 255, 0), 0 0 80px rgb(255, 255, 0);
+    /* primero definimos cuánto queremos que se corra del eje x, después del eje y, después definimos el blur (difuminado) y después el color */
+    /* separamos con comas (,) cuando queremos agregar capas */
+    /* ir jugando con el aumento del blur le da el efecto neon */
+}
+
+.blue {
+    text-shadow: 0 0 5px rgb(85, 85, 250), 0 0 10px rgb(85, 85, 250), 0 0 25px rgb(85, 85, 250), 0 0 40px rgb(85, 85, 250), 0 0 65px rgb(85, 85, 250), 0 0 80px rgb(85, 85, 250);
+}
+
+.pink {
+    text-shadow: 0 0 5px rgb(253, 133, 153), 0 0 10px rgb(253, 133, 153), 0 0 25px rgb(253, 133, 153), 0 0 40px rgb(253, 133, 153), 0 0 65px rgb(253, 133, 153), 0 0 80px rgb(253, 133, 153);
+}
+
+
+/* botones */
+
+.boton {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.btnyellow {
+    background: rgb(255, 255, 0);
+}
+
+.btnblue {
+    background: rgb(85, 85, 250);
+}
+
+.btnpink {
+    background: rgb(253, 133, 153);
+}
